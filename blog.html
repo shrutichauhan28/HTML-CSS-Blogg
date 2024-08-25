@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CEO Blog</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
@@ -20,22 +20,43 @@
         </div>
     </header>
 
-    <main>
-        <section class="post">
-            <div class="post-image">
-                <img src="post-image.jpg" alt="Blog Post Image">
-            </div>
-            <div class="post-content">
-                <h2>You Haven’t Hit Your Peak Yet!</h2>
-                <p class="post-category">Post in <a href="#">Leadership</a></p>
-                <p>
-                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and...
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-                </p>
-            </div>
-        </section>
+    <div class="container">
+      
+            <section class="post">
+                <div class="post-image">
+                    <img src="images\blog-image.jpg" alt="Blog Post Image">
+                </div>
+                
+                <div class="container">
+                    <aside class="sidebar">
+                        <h3>CATEGORIES</h3>
+                        <ul>
+                            <li><input type="radio" name="category" id="communication" checked><label for="communication">Communication</label></li>
+                            <li><input type="radio" name="category" id="leadership"><label for="leadership">Leadership</label></li>
+                            <li><input type="radio" name="category" id="emotional-states"><label for="emotional-states">Emotional States</label></li>
+                            <li><input type="radio" name="category" id="habits"><label for="habits">Habits</label></li>
+                            <li><input type="radio" name="category" id="inspiration"><label for="inspiration">Inspiration</label></li>
+                            <li><input type="radio" name="category" id="journalling"><label for="journalling">Journalling</label></li>
+                            <li><input type="radio" name="category" id="travel"><label for="travel">Travel</label></li>
+                            <li><input type="radio" name="category" id="nature"><label for="nature">Nature</label></li>
+                        </ul>
+                    </aside>
+            
+                    <main class="content">
+                        <h1>You Haven’t Hit Your Peak Yet!</h1>
+                        <p class="post-category">Post in <span class="category-label">LEADERSHIP</span></p>
+                        <p>
+                            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+                        </p>
+                        <p>
+                            Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it?
+                        </p>
+                        <h2>But I must explain to you how all this mistaken idea of</h2>
+                        <p>
+                            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+                        </p>
+                    </main>
+                </div>
 
         <section class="comments">
             <h3>Comments</h3>
@@ -59,17 +80,17 @@
             <h3>Recommended Blogs</h3>
             <div class="blogs">
                 <div class="blog">
-                    <img src="blog1.jpg" alt="Blog 1">
+                    <img src="images/rblog-1.jpg" alt="Blog 1">
                     <p>7 Secrets For Leadership Success</p>
                 </div>
                 <div class="blog">
-                    <img src="blog2.jpg" alt="Blog 2">
+                    <img src="images/rblog-2.jpg" alt="Blog 2">
                     <p>Est dignissimos perspiciatis nam eos</p>
                 </div>
                 <!-- Repeat for other blogs -->
             </div>
         </section>
-    </main>
+    </div>
 
     <footer>
         <p>© 2024 CEO Blog. All rights reserved.</p>
